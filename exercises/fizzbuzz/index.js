@@ -12,6 +12,36 @@
 //   4
 //   buzz
 
-function fizzBuzz(n) {}
+function fizzBuzz(n) {
+    for (var i = 1; i <= n; i++) {
+
+        if(i % 3 === 0 && i % 5 === 0) {
+            console.log("fizzbuzz");
+        } else if (i % 3 === 0) {
+            console.log("fizz");
+        } else if (i % 5 === 0) {
+            console.log("buzz");
+        } else {
+            console.log(i);
+        }
+
+        //unconventional switch approach
+        // switch(true) {
+        //     case (i % 3 === 0 && i % 5 === 0):
+        //         console.log("fizzbuzz");
+        //         break;
+        //     case i % 3 === 0:
+        //         console.log("fizz");
+        //         break;
+        //     case i % 5 === 0:
+        //         console.log("buzz");
+        //         break;
+        //     default:
+        //         console.log(i);
+        //         break;
+        // }
+    }
+
+}
 
 module.exports = fizzBuzz;
